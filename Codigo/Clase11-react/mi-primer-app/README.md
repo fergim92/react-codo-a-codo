@@ -1,3 +1,16 @@
+## El Virtual DOM (DOM Virtual o DOM Virtualizado) 
+Es un concepto clave en React, una popular biblioteca de JavaScript para construir interfaces de usuario interactivas y reactivas. El DOM (Document Object Model) es una representación de la estructura del documento HTML que se crea cuando se carga una página web en el navegador.
+
+El Virtual DOM de React es una abstracción liviana del DOM real. Cuando se trabaja con React, en lugar de actualizar directamente el DOM del navegador cada vez que hay un cambio en los datos o el estado de la aplicación, React realiza las actualizaciones primero en su propio Virtual DOM.
+
+El proceso de actualización del Virtual DOM es mucho más rápido que la manipulación directa del DOM del navegador. Una vez que React ha realizado todas las actualizaciones necesarias en el Virtual DOM, compara la versión actualizada del Virtual DOM con la versión anterior (snapshot anterior) para detectar los cambios que realmente ocurrieron. Esto se conoce como reconciliación.
+
+Después de la reconciliación, React identifica y aplica solo los cambios necesarios al DOM real del navegador, minimizando las manipulaciones y actualizaciones en el DOM, lo que reduce significativamente el costo computacional y mejora el rendimiento de la aplicación.
+
+El Virtual DOM de React permite una programación más sencilla y eficiente, ya que los desarrolladores pueden trabajar con una abstracción del DOM sin preocuparse por las actualizaciones manuales y directas. Esta técnica es una de las razones principales por las que React se considera una biblioteca eficiente y rápida para crear interfaces de usuario dinámicas y reactivas.
+
+# Comandos
+
 ### `npx create-react-app miPrimerApp`
 // Me da una aplicacioncita basica de react.
 // Esto  va a crear la carpeta con los node_modules !Este no se tiene que subir 
